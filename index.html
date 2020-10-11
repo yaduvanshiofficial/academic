@@ -1,0 +1,1921 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Yaduvanshi Ankit - Researcher | Looking for PhD in Computer Science</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Yaduvanshi Ankit is a researcher looking for PhD in Computer Science. He is interested in Deep Learning and/or Machine Learning based research in Natural Language Processing, Intelligent Agents, Transfer Learning, Human-Computer Interaction, Reinforcement Learning, Cognitive Science and Robotics. ">
+    <meta name="keywords" content="Ankit Kumar">
+    <meta name="keywords" content="Yaduvanshi Ankit">
+    <meta name="keywords" content="Deep Learning">
+    <meta name="keywords" content="Machine Learning">
+    <meta name="keywords" content="Natural Language Processing">
+    <meta name="keywords" content="Intelligent Agents">
+    <meta name="keywords" content="Cognitive Science">
+    <meta name="keywords" content="Reinforcement Learning">
+    <meta name="keywords" content="Transfer Learning">
+    <meta name="keywords" content="Human Computer Interaction">
+    <meta name="keywords" content="PhD Computer Science">
+    <meta name="keywords" content="Researcher">
+    <meta name="author" content="Ankit Kumar">
+    <meta name="author" content="Yaduvanshi Ankit">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- CSS | STYLE -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/linecons.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/colors/cyan.css"  id="csscolors"  />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- CSS | Google Fonts -->
+
+    <link href='http://fonts.googleapis.com/css/Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css/Raleway:200,400,300,500,600' rel='stylesheet' type='text/css'>
+    <link href='css/Montserrat.css' rel='stylesheet' type='text/css'>
+    <link href='css/Raleway.css' rel='stylesheet' type='text/css'>
+
+    <noscript>
+        <style>
+        @media screen and (max-width: 755px) {
+            .hs-content-scroller {
+                overflow: visible;
+            }
+        }
+        </style>
+    </noscript>
+
+    <style type="text/css">
+    .tab-pane h4, h3 {
+        font-weight: 800;
+        font-size: 1em;
+        font-style: Montserrat;
+    }
+    .linkers {
+        color: #0DADB7;
+    }
+    .linkers: hover {
+        color: #444444;
+    }
+
+    .success {
+        padding: 1em;
+        margin-bottom: 0.75rem;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        /* color: #468847; */
+        /* color: #CFFFF5; */
+        color: white;
+        /* background-color: #dff0d8; */
+        /* background-color: #CFFFF5; */
+        background-color: #00b3b3;
+        border: 1px solid #d6e9c6;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .error {
+        padding: 1em;
+        margin-bottom: 0.75rem;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        /* color: #b94a48; */
+        /* color: #FFDFDF; */
+        color: white;
+        /* background-color: #f2dede; */
+        background-color: #00b3b3; /* #FFDFDF */
+        border: 1px solid rgba(185, 74, 72, 0.3);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+    
+
+    #frmContact {
+        border-top:#F0F0F0 2px solid;
+        background:#FAF8F8;
+        padding:10px;
+    }
+    
+    #frmContact div {
+        margin-bottom: 15px;
+    }
+    
+    #frmContact div label {
+        margin-left: 5px;
+    }
+    
+    .error {
+        background-color: #00b3b3; /* #FF6600 */ 
+        border:#AA4502 1px solid;
+        padding: 5px 10px;
+        /* color: #FFFFFF; */ 
+        color: white; 
+        border-radius:2px;
+    }
+
+    .success {
+        /* background-color: #12CC1A; */
+        background-color: #00b3b3; /* #0DADB7 */
+        border:#0FA015 1px solid;
+        padding: 5px 10px;
+        color: #FFFFFF; 
+        color: white; 
+        border-radius:2px;
+    }
+    .info{font-size:.8em;color: #FF6600;letter-spacing:2px;padding-left:5px;}
+    .mail-status {
+        background-color: #0DADB7;
+    }
+
+
+    </style>
+    
+<!--    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script> -->
+    <script>
+        function sendContact() {
+	        var valid;	
+	        valid = validateContact();
+        	if(valid) {
+		        jQuery.ajax({
+		        url: "contact_mail.php",
+		        data:'userName='+$("#userName").val()+'&userEmail='+$("#userEmail").val()+'&subject='+$("#subject").val()+'&content='+$("#content").val(),
+        		type: "POST",
+		        success:function(data){
+        		$("#mail-status").html(data);
+        		},
+		        error:function(data){
+		            $("#mail-status").html(data);
+		        }
+        		});
+        	}
+        }
+
+        function validateContact() {
+	        var valid = true;	
+        	$(".demoInputBox").css('background-color','');
+        	// $(".info").html('');
+	
+        	if(!$("#userName").val()) {
+		        // $("#userName-info").html("(Your name is required.)");
+        		$("#userName").css('background-color','#F3E1E1');
+			$("#userName").css('border-color','#e60000');
+		        valid = false;
+        	}
+	        if(!$("#userEmail").val()) {
+        		// $("#userEmail-info").html("(E-mail is required.)");
+		        $("#userEmail").css('background-color','#F3E1E1');
+			$("#userEmail").css('border-color','#e60000');
+        		valid = false;
+        	}
+	        if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+        		// $("#userEmail-info").html("(A valid E-mail is required.)");
+        		$("#userEmail").css('background-color','#F3E1E1');
+			$("#userEmail").css('border-color','#e60000');
+		        valid = false;
+        	}
+	        if(!$("#subject").val()) {
+		        // $("#subject-info").html("(Subject is required)");
+		        $("#subject").css('background-color','#F3E1E1');
+			$("#subject").css('border-color','#e60000');
+		        valid = false;
+        	}
+	        if(!$("#content").val()) {
+        		// $("#content-info").html("(Please write some message before you send.)");
+		        $("#content").css('background-color','#F3E1E1');
+			$("#content").css('border-color','#e60000');
+		        valid = false;
+        	}
+	
+            return valid;
+        }
+</script>
+
+
+
+
+
+</head>
+
+<body>
+    <!-- Page preloader -->
+    <div id="page-loader">
+        <canvas id="demo-canvas"></canvas>
+    </div>
+    <!-- container -->
+    <div id="hs-container" class="hs-container">
+        <aside class="hs-menu" id="hs-menu">
+            <!-- <canvas id="demo-canvas"></canvas> -->
+
+            <!-- Profil Image-->
+            <div class="hs-headline">
+                <a id="my-link" href="#my-panel"><i class="fa fa-bars"></i></a>
+ <!--                <a href="#" class="download"><i class="fa fa-cloud-download"></i></a> -->
+                <div class="img-wrap">
+                    <img src="images/me2.png" alt="" width="220" height="160" />
+                </div>
+                <div class="profile_info">
+                    <h1>Yaduvanshi Ankit</h1>
+                    <h4>Innovation Enthusiast</h4>
+                    <h6><span class="fa fa-location-arrow"></span>&nbsp;&nbsp;&nbsp;New Delhi, India</h6>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div class="separator-aside"></div>
+            <!-- End Profil Image, archive, tags-->
+
+            <!-- menu pencil, flask,-->
+            <nav>
+                <a href="#section1"><span class="menu_name">ABOUT</span><span class="fa fa-home"></span> </a>
+                <a href="#section2"><span class="menu_name">EDUCATION</span><span class="fa fa-newspaper-o"></span> </a>
+                <a href="#section3"><span class="menu_name">SKILLS</span><span class="fa fa-diamond"></span> </a>
+                <a href="#section4"><span class="menu_name">PUBLICATIONS</span><span class="fa fa-book"></span> </a>
+                <a href="#section5"><span class="menu_name">WORK</span><span class="fa fa-shield"></span> </a>
+                <a href="#section6"><span class="menu_name">TOOLS</span><span class="fa fa-wrench"></span> </a>
+                <a href="#section7"><span class="menu_name">BLOGS</span><span class="fa fa-thumb-tack"></span> </a>
+                <a href="#section8"><span class="menu_name">CONTACT</span><span class="fa fa-paper-plane"></span> </a>
+            </nav>
+            <!-- end menu-->
+            <!-- social icons -->
+            <div class="aside-footer">
+                <a href="https://www.facebook.com/YaduvanshiAnkitOfficial" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/HumanYaduvanshi" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/YaduvanshiAnkitOfficial/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/YaduvanshiAnkitOfficial/" title="Github" target="_blank"><i class="fa fa fa-github"></i></a>
+                <a href="https://www.quora.com/profile/Yaduvanshi-Ankit" style="font-size:15px;" title="Quora" target="_blank"><i class="fa"><b>Q</b></i></a>
+            </div>
+            <!-- end social icons -->
+        </aside>
+        <!-- End sidebar -->
+
+        <!-- Go To Top Button -->
+        <a href="#hs-menu" class="hs-totop-link"><i class="fa fa-chevron-up"></i></a>
+        <!-- End Go To Top Button -->
+
+        <!-- hs-content-scroller -->
+        <div class="hs-content-scroller">
+            <!-- Header -->
+            <div id="header_container">
+                <div id="header">
+                    <div><a class="home"><i class="fa fa-home"></i></a>
+                    </div>
+                    <div><a href="" class="previous-page arrow"><i class="fa fa-angle-left"></i></a>
+                    </div>
+                    <div><a href="" class="next-page arrow"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <!-- News scroll -->
+                    <div class="news-scroll">
+                        <span style = "font-weight:600;"><i class="fa fa-line-chart"></i>RECENT ACTIVITY : </span>
+                        <ul id="marquee" class="marquee" style = "font-size:1.3em;">
+                            <li>
+                                <b>Feb 28, 2019:</b> New work on Convolution Neural Network for NLP tasks exploration started in parallel with Data Science project.</li>
+                            <li>
+                                <b>Feb 13, 2019:</b> Work resumed with some improvement in health. Development of Data Science based applications started to ease the usage of programmable technologies for people with little or no knowledge of programming.</li>
+                            <li>
+                                <b>Jan 31, 2019:</b> Paper titled "Self-Attention Enhanced Recurrent Neural Networks for Sentence Classification" is now available online at IEEE Xplore.</li>
+                            <li>
+                                <b>Oct 5, 2018:</b> All work halted due to a heath issue until next notification.</li>
+                            <li>
+                                <b>Oct 4, 2018:</b> Paper titled "Attentional Recurrent Neural Networks for Sentence Classification" is now available online at Springer Nature.</li>
+                            <li>
+                                <b>Sep 14, 2018:</b> New work on transfer learning with a vision to generalize learning on both the similar as well as non-similar tasks started.</li>
+                            <li>
+                                <b>Sep 1, 2018:</b> Paper with title "Self Attention Enhanced Recurrent Neural Networks for Sentence Classification" accepted at IEEE Symposium Series on Computational Intelligence, Bangaluru, 2018.</li>
+                            <li>
+                                <b>Aug 29, 2018:</b> Work on Support Vector Machine based Recurrent Neural Networks for multi-label classification completed with positive results.</li>
+                            <li>
+                                <b>Aug 14, 2018:</b> New blog titled "Need for advancement in research methodology and ideologies in India" now available to read at my blogger profile.</li>
+                        </ul>
+                    </div>
+                    <!-- End News scroll -->
+                </div>
+            </div>
+            <!-- End Header -->
+
+            <!-- hs-content-wrapper -->
+            <div class="hs-content-wrapper">
+                <!-- About section -->
+                <article class="hs-content about-section" id="section1">
+                    <span class="sec-icon fa fa-home"></span>
+                    <div class="hs-inner">
+                        <span class="before-title">.01</span>
+                        <h2>ABOUT</h2>
+                        <span class="content-title">PERSONAL DETAILS</span>
+                        <div class="aboutInfo-contanier">
+                            <div class="about-card">
+                                <div class="face2 card-face">
+                                    <div id="cd-google-map">
+                                        <div id="google-container" data-geocode="28.585525, 77.190273"></div>
+                                        <div id="cd-zoom-in"></div>
+                                        <div id="cd-zoom-out"></div>
+                                        <address>New Delhi, India</address>
+                                        <div class="back-cover" data-card-back="data-card-back"><i class="fa fa-long-arrow-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face1 card-face">
+                                    <div class="about-cover card-face">
+                                        <a class="map-location" data-card-front="data-card-front"><img src="images/map-icon.png" alt="">
+                                        </a>
+                                        <div class="about-details">
+                                            <div><span class="fa fa-inbox"></span><span class="detail">yaduvanshiankit@outlook.com</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="cover-content-wrapper">
+                                            <span class="about-description" style="margin-bottom: 0; padding-bottom: 0;">
+                                                <span>Hello. I am a </span>
+                                                <span class="rw-words">
+                                                    <span><strong>Dreamer.</strong></span>
+                                                    <span><strong>Researcher.</strong></span>
+                                                    <span><strong>Programmer.</strong></span>
+                                                    <span><strong>Deep Learning Enthusiast.</strong></span>
+                                                    <span><strong>Visionary.</strong></span>
+                                                    <span><strong>Leader.</strong></span>
+                                                </span>
+                                            </span>
+                                            <span class="about-description" style="margin-top:0; padding-top:0;">
+                                                <span>I am interested in </span>
+                                                <span class="rw-words">
+                                                    <span><strong>Intelligent Agents.</strong></span>
+                                                    <span><strong>Natural Language Processing.</strong></span>
+                                                    <span><strong>Human Computer Interaction.</strong></span>
+                                                    <span><strong>Transfer Learning.</strong></span>
+                                                    <span><strong>Cognitive Science.</strong></span>
+                                                    <span><strong>Reinforcement Learning.</strong></span>
+                                                </span>
+                                                <br>I am passionate about developing AI based solutions to take education to every person in world for free, forever.
+                                                <br><strong>Welcome to my Personal and Academic profile.</strong>
+                                            </span>
+                                            <span class="status">
+                                                <span class="fa fa-circle"></span>
+                                                <span class="text" style="font-size: 1.2em;">Looking for a <strong>PhD position in Computer Science.</strong></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-details">
+                                <div class="tabbable tabs-vertical tabs-left">
+                                    <ul id="myTab" class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#bio" data-toggle="tab">Bio</a>
+                                        </li>
+                                        <li>
+                                            <a href="#interest" data-toggle="tab">Research &nbsp; Interest</a>
+                                        </li>
+                                        <li>
+                                            <a href="#longterm" data-toggle="tab">Long-Term Goal</a>
+                                        </li>
+                                    </ul>
+                                    <div id="myTabContent" class="tab-content">
+
+                                        <div class="tab-pane fade in active" id="bio">
+                                            <h3>BIO</h3>
+                                            <h4 style = "font-size: 1.3em;">ABOUT ME</h4>
+                                            <p style = 'font-size: 1.4em; font-weight:400; line-height: 1.3em; margin-top:0;'>Hi! I am Ankit. I am an innovation enthusiast looking for a PhD position in Computer Science. My general areas of interest are deep learning, intelligent agents, natural language processing & understanding, human-computer interaction, transfer learniing, cognitive science and reinforcement learning. My research focuses on generalizing learning for intelligent agents. I aim to be a key contributor in the development of generalized artificial intelligence and hope to experience the day when we can enthusiastically say: "Whoa! I didn't knew I was talking to an artificial agent. Amazing!"</p>
+
+                                            <p style = 'font-size: 1.4em; font-weight:400; line-height: 1.3em; margin-top:0;'>I graduated with B.Tech in Computer Science from A.P.J. Abdul Kalam Technical University in 2015 and M.Sc. in Computer Science from South Asian University in 2018. I spent my final year of M.Sc. doing research on Natural Language Processing and Intelligent Agents.</p>
+						
+                                        </div>
+
+                                        <div class="tab-pane fade" id="interest">
+                                            <h3>CURRENT RESEARCH INTERESTS</h3>
+                                            <h4 style = "font-size: 1.3em;">Intelligent Agents</h4>
+                                            <p style = 'font-size: 1.4em; font-weight:400; line-height: 1.3em; margin-top:0;'>I have been trying to build context-driven languistically developed, cognitive intelligent agent for some time. I find this an interesting challenge which, for me, involves a number of tasks starting from query classification, to intent and entity detection with a mechanism to dynamically save and build the cognitive context, and further retrieve these contexts to make decisions. At the end we need a conversational agent too with the capability to work on these contexts and formulate contextually correct responses. To improve on context development I believe, it may require a sentiment detection, sarcasm detection, global variable collection and many other such added contexts that can help in understanding the query and then responding to it with the best possible response. It has been a great challenge to build the cognitive part and a mechanism to save and access it. I am looking forward to new and more effective ways to deal with this problem.</p>
+
+                                            <h4 style = "font-size: 1.3em;">Natural Language Processing</h4>
+                                            <p style = 'font-size: 1.4em; font-weight:400; line-height: 1.3em; margin-top:0;'>NLP is an integral dream of AI. We, as human, have always imagined AI's to converse with humans or other AI's in our day to day language with fluency and complete understanding. The taks in NLP involve solving the challenges that our current state of AI is facing in processing, understanding and using as a means of communication. I see NLP challenges as the most critical one's in terms of AI development for applications involving interaction of humans with AI. We humans have invariably developed a sense of context, thanks to evolution (if Darwin is right), and we use the context for not only differentiably understanding but also replying. Thus, I believe it is important to develop context based NLP solutions for the fantasized future of AI. </p>
+
+                                            <h4 style = "font-size: 1.3em;">Transfer Learning</h4>
+                                            <p style = 'font-size: 1.4em; font-weight:400; line-height: 1.3em; margin-top:0;'>I have always believed it is a generalized learning that will take us closer to the dream of AI we all have been talking about. Transfer learning is one such task which allows us to reach a platform where an intelligent agent is able to perform multiple tasks while transfering its learning of one task to other. I have recently started working with this idea and I find it really interesing both theoretically and practically because its implications can be really wonderful.</p>
+
+                                            <h4 style = "font-size: 1.3em;">Human-Computer Interaction</h4>
+                                            <p style = 'font-size: 1.4em; font-weight:400; line-height: 1.3em; margin-top:0;'>HCI is the core of all the development that we are hoping or working for. We need to monitor and develop AI considering the human interaction requirements. An excellent AI with poor communication or usability for common human beings is as good a commerce student writing science exam. Therefore, we need to develop AI with human interaction and usability needs in perspective.</p>
+
+                                            <h4 style = "font-size: 1.3em;">Reinforcement Learning</h4>
+                                            <p style = 'font-size: 1.4em; font-weight:400; line-height: 1.3em; margin-top:0;'>Reinforcement learning is at the core of learning. If Darwin is to believed to be right than reinforcement learning is what we have been doing ever since the unicellular organism appeared on Earth, 3.5 billion years ago. We can learn models with supervised and unsupervised learning but when it comes to development of a real, physically capable or at least an AI that works in a real environment, we will always need reinforcement learning. Some policies can only be learned from an active environment. Reinforcement learning for me is the ultimate learning that we will have to use in order to reac the Ai level anywhere clsoe to humans and perhaps beyond.</p>
+
+                                            <h4 style = "font-size: 1.3em;">Cognitive Science</h4>
+                                            <p style = 'font-size: 1.4em; font-weight:400; line-height: 1.3em; margin-top:0;'>Cognition had a lot to do with the development of first perceptron model back in 1942. In past two centuries we have learned more about human cognition than we did in the billion years before that. Knowledge and development of cognition development and working gives us the idea about how human machine attempts to do any cognitive task. This in turn gives us an insight into what kind of architecture or algorithm do we need to build for a particluar cognitive task.</p>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="longterm">
+                                            <h3>LONG TERM GOALS</h3>
+                                            <h4 style = "font-size: 1.3em;">QUALITY EDUCATION FOR ALL</h4>
+                                            <p style = 'font-size: 1.4em; font-weight:400; line-height: 1.3em; margin-top:0;'>I believe education is the fundamental right of all human beings. Knowledge is what out forefathers have passed on to us generations by generations. Looking at the current state of the world, it can be safely said that a lot of the knowledge is lost because it wasn't shared. This knowledge could have changed the way this world works or the way we see this world. If Bruno or Newton wouldn't have shared their knowledge then probably we would still be thinking Earth to be a flat surface and the centre of the universe. Since, some of us got to learn and educate ourselves consuming the resources provided by the nature it is our responsibility to not only take the current state of knowledge foreward but also to take education to those who are still living at the dark edge of this enlighted world. Therefore, my ultimate goal is to develop AI based architectures which could utilize today's handheld or position fixed technologies to take education to every person in the world in a really positive manner. I strongly believe, AI is one tool that can help the world in realizing a long debated and anticipated dream and goal of taking the fundamental right of quality education to every being in the world. I hope to make it possible in this lifetime alone.</p>
+
+					    <h4 style = "font-size: 1.3em;">Healthcare Solutions</h4>
+					    <p style = 'font-size: 1.4em; font-weight:400; line-height: 1.3em; margin-top:0;'>Healthcare is one department in which deta-centric approaches like Machine or Deep Learning can make a big impact. For the first time in our known human history we have a tool at our disposal that allows us to look deeper into every disease, understand its reasons & maybe cure it or even hopefully prevent it before it grows into a life-threating disease as we know today. Healthcare is one challenge that I would like to take with both hands & hopefully make a difference.</p>
+                                            
+					    <h4 style = "font-size: 1.3em;">Cross Field Research & Application Development</h4>
+					    <p style = 'font-size: 1.4em; font-weight:400; line-height: 1.3em; margin-top:0;'>I'm inspired by the nature or so we call universe. Therefore, I try to explore, understand & learn everything that contributes to the development of universe to its current state passionately as a hobby. This hunger for knowledge & curiosity to understand how & why things work has led me to have the subject knowledge of at least the basic level in the field of Psychology, Microeconomics, Development Economics (Macroeconomics), Finance Theory, Biology, Bioengineering, Sensory Systems, Neuroscience, Chemical Science, Quantum Physics, Classical Mechanics, String Theory & Holographic Duality, Ocean & Climate Dynamics, Astrophysics, Calculus, Poker Theory & Analysis, LASER & Robotics,</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </article>
+                <!-- End About Section -->
+
+                <!-- Resume Section -->
+                <article class="hs-content resume-section" id="section2">
+                    <span class="sec-icon fa fa-newspaper-o"></span>
+                    <div class="hs-inner">
+                        <span class="before-title">.02</span>
+                        <h2>EDUCATION</h2>
+                        <!-- Resume Wrapper -->
+                        <div class="resume-wrapper">
+                            <ul class="resume">
+
+                                <!-- Resume timeline -->
+                                <li class="time-label">
+                                    <span class="content-title">EDUCATION</span>
+                                </li>
+
+                                <li>
+                                    <div class="resume-tag">
+                                        <span class="fa fa-university"></span>
+                                        <div class="resume-date">
+                                            <span>2016</span>
+                                            <div class="separator"></div>
+                                            <span>2018</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <span class="timeline-location"><i class="fa fa-map-marker"></i>New Delhi</span>
+                                        <h3 class="timeline-header"><a href="http://sau.int/" target="_blank">SOUTH ASIAN UNIVERSITY</a></h3>
+                                        <div class="timeline-body">
+                                            <!--  style = "font-size: 1.1em; font-weight:600;"     style = "font-size: 1.1em;"-->
+                                            <h4>Master of Science in Computer Science</h4>
+                                            <span>Machine Learning, Information Retrieval, Optimization, Neural Networks, Deep Learning, Network Science.</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="resume-tag">
+                                        <span class="fa fa-university"></span>
+                                        <div class="resume-date">
+                                            <span>2011</span>
+                                            <div class="separator"></div>
+                                            <span>2015</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <span class="timeline-location"><i class="fa fa-map-marker"></i>Ghaziabad</span>
+                                        <h3 class="timeline-header"><a href="https://aktu.ac.in/" target="_blank">A. P. J. ABDUL KALAM TECHNICAL UNIVERSITY</a></h3>
+                                        <div class="timeline-body">
+                                            <h4>Bachelor of Technology in Computer Science</h4>
+                                            <span>Data Structure, Design and Analysis of Algorithm, Automata, Pattern Recognition, Web Technologies.</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="time-label">
+                                    <span class="content-title">SCHOLARSHIPS</span>
+                                </li>
+
+                                <li>
+                                    <div class="resume-tag">
+                                        <span class="fa fa-graduation-cap"></span>
+                                        <div class="resume-date">
+                                            <span>2016</span>
+                                            <div class="separator"></div>
+                                            <span>2017</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <span class="timeline-location"><i class="fa fa-map-marker"></i>New Delhi</span>
+                                        <h3 class="timeline-header"><a href="http://sau.int/" target="_blank">SOUTH ASIAN UNIVERSITY</a></h3>
+                                        <div class="timeline-body">
+                                            <h4>Merit Scholarship</h4>
+						<span>Among top <span style="font-family:helvatica; font-size: 1.1em;">5</span> students admitted for M.Sc. Computer Science  programme at SAU.</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="time-label">
+                                    <span class="content-title">ACADEMIC QUALIFICATIONS</span>
+                                </li>
+
+                                <li>
+                                    <div class="resume-tag">
+                                        <span class="fa fa-graduation-cap"></span>
+                                        <div class="resume-date">
+                                            <span>2018</span>
+                                            <div class="separator"></div>
+                                            <span>2018</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <span class="timeline-location"><i class="fa fa-map-marker"></i>New Delhi</span>
+                                        <h3 class="timeline-header"><a href="https://www.ugc.ac.in/" target="_blank">UNIVERSITY GRANTS COMMISSION</a></h3>
+                                        <div class="timeline-body">
+                                            <h4>UGC NET Qualified for Assistant Professor</h4>
+                                            <span>Among top <span style="font-family:helvatica; font-size: 1.1em;">6.5</span>% students of the <span style="font-family:helvatica; font-size: 1.1em;">8,59,498</span> applicants who qualified for NET in <span style="font-family:helvatica; font-size: 1.1em;">2018</span>.</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="time-label">
+                                    <span class="content-title">CURRICULUM VITAE</span>
+                                </li>
+                                <li>
+                                    <div class="resume-tag">
+                                        <span class="fa fa-graduation-cap"></span>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-body">
+                                            <h4 style = "font-size: 1.3em; font-weight:500;"><center><a href="https://drive.google.com/file/d/1aP8VGo9DxBoO8_olLJVGvRX0Zmxn8kYr/view?usp=sharing" class="linkers" target="_blank">Click to see CV in PDF format.</a></center></h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="time-label">
+                                    <span class="content-title">GOOGLE SCHOLAR</span>
+                                </li>
+                                <li>
+                                    <div class="resume-tag">
+                                        <span class="fa fa-graduation-cap"></span>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-body">
+                                            <h4 style = "font-weight: 500; font-size: 1.3em;"><center><a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" class="linkers" target="_blank">Click to see Google Scholar profile.</a></center></h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- End Resume timeline -->
+                            </ul>
+                        </div>
+                        <!-- End Resume Wrapper -->
+                    </div>
+                </article>
+                <!-- End Resume Section-->
+
+                <!-- Skills Section -->
+                <article class="hs-content skills-section" id="section3">
+                    <span class="sec-icon fa fa-diamond"></span>
+                    <div class="hs-inner">
+                        <span class="before-title">.03</span>
+                        <h2>SKILLS</h2>
+                        <span class="content-title">TECHNICAL AND INFORMATIONAL</span>
+                        <div class="skolls">
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="80"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : INTERMEDIATE</span><span class="skill-detail"><i class="fa fa-binoculars"></i>EXPERIENCE : 2 YEARS</span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">Python</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="80"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : INTERMEDIATE</span><span class="skill-detail"><i class="fa fa-binoculars"></i>EXPERIENCE : 1 YEARS</span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">Tensorflow</span><span class="label" style = "font-size:1em;">Keras</span><span class="label" style = "font-size:1em;">SciKit-Learn</span><span class="label" style = "font-size:1em;">NLTK</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="80"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : INTERMEDIATE</span><span class="skill-detail"><i class="fa fa-binoculars"></i>EXPERIENCE : 1 YEARS</span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">Matplotlib</span><span class="label" style = "font-size:1em;">Seaborn</span><span class="label" style = "font-size:1em;">Plotly</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="90"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : ADVANCED</span><span class="skill-detail"><i class="fa fa-binoculars"></i>EXPERIENCE : 1 YEARS</span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">NumPy</span><span class="label" style = "font-size:1em;">SciPy</span><span class="label" style = "font-size:1em;">Pandas</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="80"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : INTERMEDIATE</span><span class="skill-detail"><i class="fa fa-binoculars"></i>EXPERIENCE : 2 YEARS</span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">MySQL</span><span class="label" style = "font-size:1em;">MongoDB</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="content-title">ANALYSIS & RESEARCH</span>
+                        <div class="skolls">
+
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="80"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : INTERMEDIATE</span><span class="skill-detail"><i class="fa fa-binoculars"></i>EXPERIENCE : 1 YEAR</span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">Descriptive Analysis</span><span class="label" style = "font-size:1em;">Statistical Analysis</span><span class="label" style = "font-size:1em;">PCA</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="80"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : INTERMEDIATE</span><span class="skill-detail"><i class="fa fa-binoculars"></i>EXPERIENCE : 1 YEAR</span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">Data Mining</span><span class="label" style = "font-size:1em;">Data Collection</span><span class="label" style = "font-size:1em;">Check for Accuracy</span><span class="label" style = "font-size:1em;">Metrics</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="content-title">CREATIVITY & COMMUNICATION</span>
+                        <div class="skolls">
+
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="90"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : ADVANCED</span><span class="skill-detail"><i class="fa fa-binoculars"></i></span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">Curiosity</span><span class="label" style = "font-size:1em;">Adaptability</span><span class="label" style = "font-size:1em;">Logical Reasoning</span><span class="label" style = "font-size:1em;">Imagination</span><span class="label" style = "font-size:1em;"></span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="100"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : EXPERT</span><span class="skill-detail"><i class="fa fa-binoculars"></i></span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">Critical Observation</span><span class="label" style = "font-size:1em;">Positive Reinforcement</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="80"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : INTERMEDIATE</span><span class="skill-detail"><i class="fa fa-binoculars"></i></span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">Verbal Communication</span><span class="label" style = "font-size:1em;">Non-verbal Communication</span><span class="label" style = "font-size:1em;">Active Listening</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="content-title">LEADERSHIP & MANAGEMENT</span>
+                        <div class="skolls">
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="100"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : EXPERT</span><span class="skill-detail"><i class="fa fa-binoculars"></i></span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">Teamwork</span><span class="label" style = "font-size:1em;">Self-motivated</span><span class="label" style = "font-size:1em;">Humility</span><span class="label" style = "font-size:1em;">Self-starter</span><span class="label" style = "font-size:1em;">Integrity</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="90"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : ADVANCED</span><span class="skill-detail"><i class="fa fa-binoculars"></i></span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">Problem Solving</span><span class="label" style = "font-size:1em;">Decision Making</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <span class="skill-description"></span>
+                            <div class="bar-main-container">
+                                <div class="wrap">
+                                    <div class="bar-percentage" data-percentage="80"></div>
+                                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : INTERMEDIATE</span><span class="skill-detail"><i class="fa fa-binoculars"></i></span>
+                                    <div class="bar-container">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <span class="label" style = "font-size:1em;">Planning</span><span class="label" style = "font-size:1em;">Delegation</span><span class="label" style = "font-size:1em;">Time Management</span><span class="label" style = "font-size:1em;">Professionalism</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- End Skills Section -->
+
+
+                <!-- Publication Section -->
+                <article class="hs-content publication-section" id="section4">
+                    <span class="sec-icon fa fa-pencil"></span>
+                    <div class="hs-inner">
+                        <span class="before-title">.04</span>
+                        <h2>PUBLICATIONS</h2>
+                        <!-- Filter/Sort Menu -->
+                        <span class="content-title">PUBLICATIONS LIST</span>
+
+                        <!-- publication wrapper -->
+                        <div id="mygrid">
+                            <!-- publication item -->
+                            <div class="publication_item" data-groups='["all","CONFERENCES"]' data-date-publication="2018-11-21">
+                                <div class="media">
+                                    <a href=".pub-detail3" class="ex-link open_popup" data-effect="mfp-zoom-out" title="Click to See Details" style = "font-weight:900;"><span><i class="fa fa-plus-square-o"></i></span></a>
+                                    <div class="date pull-left">
+                                        <span class="day">31</span>
+                                        <span class="month">JAN</span>
+                                        <span class="year">2019</span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h3 style = " margin-right:20px;">
+                                            <a href=".pub-detail3" class="head-link open_popup"><b>SELF-ATTENTION ENHANCED RECURRENT NEURAL NETWORKS FOR SENTENCE CLASSIFICATION</b></a>
+                                        </h3>
+                                        <h3>
+                                            <a href="http://ieee-ssci2018.org/" target="_blank" class="head-link" style ="color: #606777;"><b>IEEE SYMPOSIUM SERIES ON COMPUTATIONAL INTELLIGENCE</b></a>
+                                        </h3>
+                                        <h4>BANGALURU - INDIA</h4>
+                                        <span class="publication_description">Enhancement of recurrent neural network learning capability by implementing the multi-head self attention layer on top of the recurrent layer thus freeing the model learning from the length of the sentence. We set new state-of-the-art result for this task of sentence classification with this work.</span>
+                                    </div>
+                                    <hr style="margin:8px auto">
+                                    <span class="label label-primary">Conference</span>
+                                    <span class="label label-success">Published</span>
+<!--                                    <span class="label label-warning" style = "font-size: 1em;">IEEE</span> -->
+                                     <span class="label selected">IEEE</span>
+                                    <span class="publication_authors">
+                                        <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a> and <a href="https://scholar.google.co.in/citations?user=NqIkygEAAAAJ&hl=en" target="_blank"><strong>Reshma Rastogi</strong></a>
+                                    </span>
+                                </div>
+                                <div class="mfp-hide mfp-with-anim pub-detail3 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>  style = "font-size: 1.2em; margin-right: 20px;"  style = "font-size: 1em;"
+ -->                                    
+                                    <div class="project_content">
+                                        <div class="content_title">
+                                            <h3 class="blogs_title">SELF-ATTENTION ENHANCED RECURRENT NEURAL NETWORKS FOR SENTENCE CLASSIFICATION</h3>
+                                        </div>
+
+                                        <div class="col-md-10">
+
+                                            <span class="publication_authors">
+                                                <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a> and <a href="https://scholar.google.co.in/citations?user=NqIkygEAAAAJ&hl=en" target="_blank"><strong>Reshma Rastogi (nee Khemchandani)</strong></a>
+                                            </span>
+
+                                            <span class="label label-primary">Conference</span>
+                                            <span class="label label-success">Published</span>
+                                            <span class="label selected">IEEE</span>
+<!--                                    <span class="label label-warning" style = "font-size: 1em;">Accepted</span> -->
+
+                                            <p>Sentence classification is a broad term which includes many text classification tasks like, sentiment classification, polarity detection, emotion detection, questions, queries and opinion classification. In this paper we have implemented four frameworks based on two architectures, namely vanilla Recurrent Neural Network and Bidirectional Recurrent Neural Network, of Recurrent Neural Network (RNN) using two different types of cell structures namely Long Short-Term Memory and Gated Recurrent Unit for the task of sentence classification. We have implemented multi-head self-attention mechanism on top of RNN hidden network to improve the learning ability of RNNs. Further, to improve the context building in the network we utilize Mikolov's pre-trained word2vec word vectors in both the static and non-static mode.</p> 
+
+                                            <p>Recurrent neural networks can be very difficult to train given their chaotic nature. Therefore, to smoothen the training, we have initialized both the recurrent as well as the hidden weights orthogonally. The reason that propelled us to use orthogonal weights is its absolute value, which is 1, meaning that the weights in the network are stable (do not rise or diminish excessively) irrespective of the number of times repeated multiplication is performed in each iteration. In addition,  we have applied L<sub>2</sub> regularization on both the weights and L<sub>1</sub> regularization on the activity regularizer. Further, we have applied batch normalization to each layer. Batch normalization parameters are initialized to transform the input to zero mean or unit variance distribution yet amid the training, the network can discover that some other distribution may be better. Thus, batch normalization enables each layer to learn a little more about data by itself.</p>
+                                            
+                                            <p>To check the efficacy of our proposed framework, we have made a comparison of our models with the state-of-the-art methods of Yoon Kim. Furthermore, to compare the capability of multi-head self-attention against Bahdanau's attention we compare this work of ours with a previous work which was done using Bahdanau's attention on same dataset. Our framework achieves a state-of-the-art result on four of the seven datasets and a performance gain over the baseline model on five of the seven datasets. In addition, we observed that results obtained using multi-head self-attention framework are consistently higher than framework based on Bahdanau's attention.</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="blog_share">
+                                                <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a class="ext_link" href="https://drive.google.com/file/d/1aP8VGo9DxBoO8_olLJVGvRX0Zmxn8kYr/view?usp=sharing" target="_blank" title="Click to read paper."><i class="fa fa-external-link"></i></a>
+                                    <div style="clear:both"></div>
+                                </div>
+                            </div>
+                            <!-- End publication item -->
+
+                            <!-- publication item -->
+                            <div class="publication_item" data-groups='["all","CONFERENCES"]' data-date-publication="2018-11-21">
+                                <div class="media">
+                                    <a href=".pub-detail2" class="ex-link open_popup" data-effect="mfp-zoom-out" title="Click to See Details"><i class="fa fa-plus-square-o"></i></a>
+                                    <div class="date pull-left">
+                                        <span class="day">30</span>
+                                        <span class="month">SEP</span>
+                                        <span class="year">2018</span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h3 style = "margin-right: 20px;">
+                                            <a href=".pub-detail2" class="head-link open_popup"><b>ATTENTIONAL RECURRENT NEURAL NETWORKS FOR SENTENCE CLASSIFICATION</b></a>
+                                        </h3>
+                                        <h3 style = "font-weight:300;">
+                                            <a href="http://iitram.in/iciif/" target="_blank" class="head-link" style ="color: #606777;"><b>FIRST INTERNATIONAL CONFERENCE ON INNOVATIONS IN INFRASTRUCTURE</b></a>
+                                        </h3>
+                                        <h4>AHMEDABAD - INDIA</h4>
+                                        <span class="publication_description">Implementing the LSTM and GRU based unidirectional and bi-directional RNN with Bahdanau's attention on top of the layer for the task of sentence classification advances the state-of-the-art for the task of sentence classification on six benchmark datasets.</span>
+                                    </div>
+                                    <hr style="margin:8px auto">
+                                    <span class="label label-primary">Conference</span>
+                                    <span class="label label-success">Published</span>
+                                    <span class="label selected">Springer</span>
+                                    <span class="publication_authors">
+                                    <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a> and <a href="https://scholar.google.co.in/citations?user=NqIkygEAAAAJ&hl=en" target="_blank"><strong>Reshma Rastogi</strong></a>
+                                    </span>
+                                </div>
+                                <div class="mfp-hide mfp-with-anim pub-detail2 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Attentional+Recurrent+Neural+Networks+for+Sentence+Classification&btnG=" width="100%" name="myFrame"></iframe>
+
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                    <div class="project_content">
+                                        <div class="content_title">
+                                            <h3 class="blogs_title">ATTENTIONAL RECURRENT NEURAL NETWORKS FOR SENTENCE CLASSIFICATION</h3>
+                                        </div>
+
+                                        <div class="col-md-10">
+
+                                            <span class="publication_authors">
+                                                <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a> and <a href="https://scholar.google.co.in/citations?user=NqIkygEAAAAJ&hl=en" target="_blank"><strong>Reshma Rastogi (nee Khemchandani)</strong></a>
+                                            </span>
+
+                                            <span class="label label-primary">Conference</span>
+                                            <span class="label label-success">Published</span>
+                                            <span class="label selected">Springer</span>
+
+                                            <p>Sentence classification is a broad term which includes many text classification tasks like, sentiment classification, polarity detection, emotion detection, questions, queries and opinion classification. In this paper we have implemented four frameworks based on two architectures, namely vanilla Recurrent Neural Network and Bidirectional Recurrent Neural Network, of Recurrent Neural Network (RNN) using two different types of cell structures namely Long Short-Term Memory and Gated Recurrent Unit for the task of sentence classification.</p>
+
+                                            <p>We have implemented Bahdanau's self-attention mechanism on top of RNN hidden network to improve the learning ability of RNNs. Further, to improve the context building in the network we utilize Mikolov's pre-trained word2vec word vectors in both the static and non-static mode.</p>
+
+                                            <p>To check the efficacy of our proposed framework, we have made a comparison of our models with the state-of-the-art methods of Yoon Kim. Our framework achieves a state-of-the-art result on three of the six datasets and a performance gain over the baseline model on four of the six datasets.</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="blog_share">
+                                                <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a class="ext_link" href="https://link.springer.com/chapter/10.1007/978-981-13-1966-2_49" title="Click to read paper."><i class="fa fa-external-link"></i></a>
+                                    <div style="clear:both"></div>
+                                </div>
+                            </div>
+                            <!-- End publication item -->
+
+                            <!-- Publication item -->
+                            <div class="publication_item" data-groups='["all","THESES"]' data-date-publication="2018-11-15">
+                                <div class="media">
+                                    <a href=".pub-detail1" class="ex-link open_popup" data-effect="mfp-zoom-out"><i class="fa fa-plus-square-o"></i></a>
+                                    <div class="date pull-left">
+                                        <span class="day">28</span>
+                                        <span class="month">MAY</span>
+                                        <span class="year">2018</span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h3 style = "margin-right: 20px;">
+                                            <a href=".pub-detail1" class="head-link open_popup"><b>PERSONALIZED INTELLIGENT ASSISTANT</b></a>
+                                        </h3>
+                                        <h3>
+                                            <a href="http://sau.int/" target="_blank" class="head-link" style ="color: #606777;"><b>SOUTH ASIAN UNIVERSITY</b></a>
+                                        </h3>
+                                        <h4>NEW DELHI - INDIA</h4>
+                                        <span class="publication_description">In this M.Sc. thesis, I have proposed a new model for personalized intelligent assistant with the focus on context based development of the AI with dynamic preservation of contexts at various level. This work also includes my work on sentence classification, domain-intent-entity detection and conversational chatbots. </span>
+                                    </div>
+                                    <hr style="margin:8px auto">
+                                    <span class="label label-default">Thesis</span>
+                                    <span class="publication_authors">
+                                        <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>, Advisor: <a href="https://scholar.google.co.in/citations?user=NqIkygEAAAAJ&hl=en" target="_blank"><strong>Dr. Reshma Rastogi</strong></a>
+                                    </span>
+                                </div>
+                                <div class="mfp-hide mfp-with-anim pub-detail1 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1SYe_P10071filyBt6IqB9Bgshd8BbZi0/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->
+                                    <div class="project_content">
+                                        <div class="content_title">
+                                            <h3 class="blogs_title">PERSONALIZED INTELLIGENT ASSISTANT</h3>
+                                        </div>
+
+                                        <div class="col-md-10">
+
+                                            <span class="publication_authors">
+                                                <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>, Advisor: <a href="https://scholar.google.co.in/citations?user=NqIkygEAAAAJ&hl=en" target="_blank"><strong>Dr. Reshma Rastogi</strong></a>
+                                            </span>
+
+                                            <span class="label label-default">Thesis</span>
+                                        
+                                            <p>A Personalized Intelligent Assistant (PIA) is a software service which offers a set of abilities of a traditional human assistant, most notably answering questions, performing tasks and assisting its users in day to day life activities using text and speech backed by artificial intelligence (AI). There are several intelligent assistants available in the market like Siri, Google Assistant, Alexa, Cortana, and others but none of them are personalized to a user. Instead, they are general in nature.</p>
+
+                                            <p>In this thesis we propose a context-driven memory-based architecture with an aim to train an intelligent assistant into a user personalized assistant. To build such an assistant, we propose a novel domain, intent, and entity detection framework that classifies the domain of a user query and identifies the intent and entities of query efficiently. The domain, intent, and entity form the context of our assistant. This context is then saved in a multi-leveled memory to ensure the availability of context to future queries. The model also incorporates a chatbot that learns the way of answering from the user itself with constant training on user queries. This chatbot is trained using an adversarial network. Thus, helping in framing responses that are very close to human responses. In this thesis, we explore the text-based queries only since the textual path is followed by both the verbal and image query to generate the response.</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="blog_share">
+                                                <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a class="ext_link" href="https://drive.google.com/file/d/1SYe_P10071filyBt6IqB9Bgshd8BbZi0/view?usp=sharing" target="_blank" title="Click to read theses."><i class="fa fa-external-link"></i></a>
+                                    <div style="clear:both"></div>
+                                </div>
+                            </div>
+                            <!-- End Publication item -->
+
+                        </div>
+                        <!-- End Publication Wrapper -->
+                    </div>
+                    <div class="clear"></div>
+                </article>
+                <!-- End Publication Section -->
+
+
+                <!-- Works Section -->
+                <article class="hs-content works-section" id="section5">
+                    <span class="sec-icon fa fa-shield"></span>
+                    <div class="hs-inner">
+                        <span class="before-title">.05</span>
+                        <h2>WORK</h2>
+                        <span class="content-title" style="margin-bottom:10px;">DEEP LEARNING</span>
+                        <div class="portfolio">
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Text Classification</span>
+                                    <div class="portfolio_button">
+                                        <h3 style="color:;">Sentence Classification</h3>
+                                        <a href=".work1" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="mfp-hide mfp-with-anim work1 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Sentence Classification</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">Classification</span>
+
+                                                <p>Will be updated soon.</p>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Multi-Label Classification</span>
+                                    <div class="portfolio_button">
+                                        <h3>Domain, Intent and Entity Detection in Textual Queries</h3>
+                                        <a href=".work2" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="mfp-hide mfp-with-anim work2 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Domain, Intent and Entity Detection in Textual Queries</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">Classification</span>
+
+                                                <p>Will be updated soon.</p>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Chatbots</span>
+                                    <div class="portfolio_button">
+                                        <h3>Converational Chatbot with Personality</h3>
+                                        <a href=".work3" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim work3 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Converational Chatbot with Personality</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">Chatbot</span>
+
+                                                <p>Will be updated soon.</p>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">GANs</span>
+                                    <div class="portfolio_button">
+                                        <h3>Language Generation with RNN based Generative Adversarial Network</h3>
+                                        <a href=".work5" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim work5 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Language Generation with RNN based Generative Adversarial Network</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">GAN</span>
+
+                                                <p>Will be updated soon.</p>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Sentiment Analysis</span>
+                                    <div class="portfolio_button">
+                                        <h3>Sentiment Analysis in Queries and Reviews</h3>
+                                        <a href=".work6" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim work6 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Sentiment Analysis in Queries and Reviews</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">Sentiment Analysis</span>
+
+                                                <p>Will be updated soon.</p>
+
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Language Translation</span>
+                                    <div class="portfolio_button">
+                                        <h3>Language Translation with Seq2Seq Networks</h3>
+                                        <a href=".work7" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim work7 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Language Translation with Seq2Seq Networks</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">Seq2Seq</span>
+
+                                                <p>Will be updated soon.</p>
+
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Summarization</span>
+                                    <div class="portfolio_button">
+                                        <h3>Summarizatation with Recurrent Neural Networks</h3>
+                                        <a href=".work8" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim work8 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Summarizatation with Recurrent Neural Networks</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">Summarization</span>
+
+                                                <p>Will be updated soon.</p>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Image Classification</span>
+                                    <div class="portfolio_button">
+                                        <h3>Image Classification with RNN, CNN and SVM</h3>
+                                        <a href=".work10" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim work10 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Image Classification with RNN, CNN and SVM</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">Image Classification</span>
+
+                                                <p>Will be updated soon.</p>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Fraud Detection</span>
+                                    <div class="portfolio_button">
+                                        <h3>Credit Card Fraud Detection with CNN</h3>
+                                        <a href=".work11" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim work11 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Credit Card Fraud Detection with CNN</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">CNN</span>
+
+                                                <p>Will be updated soon.</p>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Handwriting Recognition</span>
+                                    <div class="portfolio_button">
+                                        <h3>Handwriting Recognition with ANN, CNN and SVM</h3>
+                                        <a href=".work12" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim work12 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Handwriting Recognition with ANN, CNN and SVM</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">Handwriting Recognition</span>
+
+                                                <p>Will be updated soon.</p>
+
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Expression Recognition</span>
+                                    <div class="portfolio_button">
+                                        <h3>Facial Expression Recognition with CNN</h3>
+                                        <a href=".work13" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim work13 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Facial Expression Recognition with CNN</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">CNN</span>
+
+                                                <p>Will be updated soon.</p>
+
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Transfer Learning</span>
+                                    <div class="portfolio_button">
+                                        <h3>Transfer Learning with Text Data</h3>
+                                        <a href=".work14" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim work14 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Transfer Learning with Text Data</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Deep Learning</span>
+                                                <span class="label label-success">Transfer Learning</span>
+
+                                                <p>Will be updated soon.</p>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                        </div>
+                        <!-- End Portfolio Wrapper -->
+
+			<br>
+                        <span class="content-title" style="margin-bottom:10px;">MACHINE LEARNING</span>
+                        <div class="portfolio">
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Topic Modelling</span>
+                                    <div class="portfolio_button">
+                                        <h3>Topic Modelling with LDA</h3>
+                                        <a href=".workml2" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim workml2 publication-detail">
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Topic Modelling with LDA</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Machine Learning</span>
+                                                <span class="label label-success">LDA</span>
+
+                                                <p>Will be updated soon.</p>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+                            <!-- Portfolio Item -->
+                            <figure class="effect-milo">
+                                <img src="images/shade.png" alt="img11" width="282" height="222" />
+                                <figcaption>
+                                    <span class="label">Text Classification</span>
+                                    <div class="portfolio_button">
+                                        <h3>Text Clasification with SVM</h3>
+                                        <a href=".workml1" class="open_popup" data-effect="mfp-zoom-out">
+                                            <i class="hovicon effect-9 sub-b"><i class="fa fa-search"></i></i>
+                                        </a>
+                                    </div>
+                                    <div class="mfp-hide mfp-with-anim workml1 publication-detail">
+                                        <div class="project_content">
+                                            <div class="content_title">
+                                                <h3 class="blogs_title">Text Clasification with SVM</h3>
+                                            </div>
+
+                                            <div class="col-md-10">
+
+                                                <span class="publication_authors">
+                                                    By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                                </span>
+
+                                                <span class="label label-primary">Machine Learning</span>
+                                                <span class="label label-success">SVM</span>
+
+                                                <p>Will be updated soon.</p>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="blog_share">
+                                                    <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End Portfolio Item -->
+
+
+
+                        </div>
+
+                    </div>
+                </article>
+                <!-- End Works Section -->
+
+
+
+                <!-- Tools Section -->
+                <article class="hs-content publication-section" id="section6">
+                    <span class="sec-icon fa fa-wrench"></span>
+                    <div class="hs-inner">
+                        <span class="before-title">.06</span>
+                        <h2>TOOLS</h2>
+                        <!-- Filter/Sort Menu -->
+                        <span class="content-title">APPLICATIONS</span>
+
+                        <!-- publication wrapper -->
+                        <div id="mygrid">
+                            <!-- publication item -->
+                            <div class="publication_item" data-groups='["all","CONFERENCES"]' data-date-publication="2018-11-21">
+                                <div class="media">
+                                    <a href=".app-detail1" class="ex-link open_popup" data-effect="mfp-zoom-out" title="Click to See Details" style = "font-weight:900;"><span><i class="fa fa-plus-square-o"></i></span></a>
+                                    <div class="date pull-left">
+                                        <span class="day">23</span>
+                                        <span class="month">MAR</span>
+                                        <span class="year">2019</span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h3 style = " margin-right:20px;">
+                                            <a href=".app-detail1" class="head-link open_popup"><b>GRADUATE ULTIMATE INTELLIGENT ADMISSION ESCORT (GUIDE)</b></a>
+                                        </h3>
+
+                                        <span class="publication_description">GUIDE is an under devloping AI assistant that guides scholars to develop a strong application for admission. It can guide you about practical admission requirements of top 500 universities in world, at the same time if you have already applied at a university, you can check your the probability of getting accepted for that programme in that university based on your application details. It's a free application, developed with an aim to help promote education in a way that one day it will be freely available to all of us without any compromise in quality.</span>
+                                    </div>
+                                    <hr style="margin:8px auto">
+                                    <span class="label label-primary">Under Development</span>
+                                    <span class="label label-success">Free</span>
+                                    <span class="publication_authors">
+                                        <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                    </span>
+                                </div>
+                                <div class="mfp-hide mfp-with-anim app-detail1 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                    <div class="project_content">
+                                        <div class="content_title">
+                                            <h3 class="blogs_title">Graduate Ultimate Intelligent Admission Escort (GUIDE)</h3>
+                                        </div>
+
+                                        <div class="col-md-10">
+
+                                            <span class="publication_authors">
+                                                By: <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                            </span>
+
+                                            <span class="label label-primary">Under Development</span>
+                                            <span class="label label-success">FREE</span>
+
+                                            <p class="firstone">Graduate admission is one tricky ground we all have walked when we decided to pursue higher education. It's a stressful task. Sometimes, I believe we should be paid to carry out such streneous task. Every year, millions of students apply at dozens of place before getting into one. More than half the time we don't even have anyone to guide us. Some can afford those pocket emptying admission counsellors while others can't. Those, with no help often end up applying at universities with little understanding about the standing of their application profile and exact university requirements. This results in wastage of money, effort and most importantly time. GAGAI is an attempt to help others understand their application and their chances even before they apply. This model is currently under development and we are hoping to put the end product up for use before Autumn session of 2019.</p>
+
+                                            <p>As a firm believer of free and quality education for all, the least I can do right now is to ensure that I save the application cost by guiding scholars about their application and their chances of getting accepted at any university they maybe looking forward to apply to in future or present. As a result, this application will be available to everyone for free. Forever.</p>
+
+                                            <p style="color: red; margin-top: 20px"><b>NOTE :</b>We are collecting data of applicants who applied for a Master's and PhD degree admission for various programs at the top 500 universities in the world to develop this model. If you can contribute to this quest of data, please fill the admission questionairre available at the link mentioned below. Also, if you can share this link with others, that will be a great help in our pursuit of timely development of this model.</p>
+
+                                            <a class="link2form" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><div>CLICK TO GO TO FORM</div></a>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <div class="blog_share">
+                                                <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                    <div style="clear:both"></div>
+
+                                    <!-- https://bit.ly/2TFcv3I -->
+                                </div>
+                            </div>
+                            <!-- End publication item -->
+                        </div>
+                        <!-- End Publication Wrapper -->
+                    </div>
+                    <div class="clear"></div>
+                </article>
+                <!-- End TOOLS Section -->
+
+
+                <!-- Blogs Section -->
+                <article class="hs-content publication-section" id="section7">
+                    <span class="sec-icon fa fa-thumb-tack"></span>
+                    <div class="hs-inner">
+                        <span class="before-title">.07</span>
+                        <h2>BLOGS</h2>
+                        <!-- Filter/Sort Menu -->
+                        <span class="content-title">ARTIFICIAL INTELLIGENCE</span>
+
+                        <!-- publication wrapper -->
+                        <div id="mygrid">
+                            <!-- publication item -->
+                            <div class="publication_item" data-groups='["all","CONFERENCES"]' data-date-publication="2018-11-21">
+                                <div class="media">
+                                    <a href=".blogs-detail1" class="ex-link open_popup" data-effect="mfp-zoom-out" title="Click to See Details" style = "font-weight:900;"><span><i class="fa fa-plus-square-o"></i></span></a>
+                                    <!-- <a href="https://aifornovice.blogspot.com/2017/10/human-artificial-intelligence-and-future.html" class="ex-link open_popup" data-effect="mfp-zoom-out" title="Click to See Details" style = "font-weight:900;" target="_blank"><span><i class="fa fa-plus-square-o"></i></span></a> -->
+                                    <div class="date pull-left">
+                                        <span class="day">30</span>
+                                        <span class="month">OCT</span>
+                                        <span class="year">2017</span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h3 style = " margin-right:20px;">
+                                            <a href=".blogs-detail1" class="head-link open_popup"><b>HUMAN, ARTIFICIAL INTELLIGENCE AND FUTURE</b></a>
+                                            <!--<a href="https://aifornovice.blogspot.com/2017/10/human-artificial-intelligence-and-future.html" class="head-link open_popup" target="_blank"><b>HUMAN, ARTIFICIAL INTELLIGENCE AND FUTURE</b></a> -->
+                                        </h3>
+
+                                        <span class="publication_description">Humans are considered as the most intelligent beings on the earth, but with the successful development of AI in past few decades and with opposite take on AI's by movies like Transformer, Her and others, have put forward a question: Will AI be the meteor to the human dinasours. If not, that where will AI lead us to? And if AI will grow into more intelligent 'beings' than us, in that case, what will be our role and as a race how can we ensure the continuity of existence? This blog, ponders on these questions and suggest a possible way that may take human civilization ahead.</span>
+                                    </div>
+                                    <hr style="margin:8px auto">
+                                    <span class="label label-primary">8 Min Read</span>
+                                    <span class="label label-success">Free</span>
+                                    <span class="publication_authors">By: 
+                                        <a href="https://scholar.google.co.in/citations?user=oUWHa_sAAAAJ&hl=en" target="_blank"><strong>Ankit Kumar</strong></a>
+                                    </span>
+                                </div>
+                                <div class="mfp-hide mfp-with-anim blogs-detail1 publication-detail">
+<!--                                     <div class="image_work">
+                                        <iframe src="https://drive.google.com/file/d/1ey27IgobHHQdXEda8SmMoP-mCbOnft0A/view?usp=sharing" width="100%" name="myFrame"></iframe>
+                                        <img class="img-responsive" src="http://placehold.it/480x200" alt="img" width="480" height="200">
+                                    </div>
+ -->                                    
+                                    <div class="project_content">
+                                        <div class="content_title">
+                                            <h3 class="blogs_title">Human, Artificial Intelligence and Future</h3>
+                                        </div>
+
+                                        <div class="col-md-10">
+
+                                            <span class="publication_authors">
+                                                <strong>30 OCT 2017</strong>
+                                            </span>
+
+                                            <span class="label label-warning">Artificial Intelligence</span>
+                                            <span class="label label-primary">8 Min Read</span>
+                                            <span class="label label-success">FREE</span>
+
+                                            <p>Humans have always been considered as the most intelligent beings on earth, by humans themselves. Looking at what we have been able to achieve in whatever time we have spent on earth, compared to other earth beings, it doesn't seems wrong. We, the humans, have always tried to find ways to get things done without doing much. Maybe laziness is one of our primary feature or maybe we are way too greedy. From stone age we moved to bronze & from bronze we moved to iron age. Ever since we reached industrial age (late 18th century) we have been contemplating about automation. The world has been working day & night on making the humanoid-machine a reality. In last few decades, we have almost made it possible with Artificial Intelligence (AI). Now, at this verge of infinite possibilities, we are faced with a question of whether these AI's will be human-alike or they will be a totally different thing. Should we continue with only AI's or are there any other alternatives too?</p>
+
+                                            <p>The AI's we are building or the AI's that we will build in future will never be human-alike. No matter how hard do we try. No matter how many algorithms or technologies we may bring with time. It just won't happen. And it's not because AI's are machines, different than our biological system. It's because with time, AI will grow on it's own path & there is every chance that it won't be same as we, the humans, want to believe. AI's will grow differently than with the intent we started imagining & later, programming them. Yes, they will be an aid to human beings, but they won't be just that. They will be much much more than that. At any stage in present or near future we will always be undermining the capabilities of AI. Not because we don't know this, but because we know AI's are gonna move way ahead of where humanity has ever gone in it's history.</p>
+
+                                            <p>We keep on saying we will reach a point (singularity) one day when AI will surpass human intelligence, but we are far away from that at present. Yes, for now it seems like AI is extremely young. However, the point to note is, it's growing at a tremendous pace, almost exponentially. For comparison let me tell you, it is estimated that it took a single cell four hundred thousand years to reach a stage where it could have movement. For AI, it took a few decades only. AI is learning far more than what we are teaching. The worse thing is, we only understand the part that as a human we understand with other humans. AI's have already started showing signs of intelligence better than humans. For example, Facebook chat-bots developed their own shorthand language to converse when the developers made an err by not defining the set of rules for language to be used in conversation. It doesn't look like we are too far away from singularity point. The current technological trends are showing a clear sign of this tremendous growth. We have moved from a single transistor & diode to millions on a single integrated chip (IC) in less than  a century. From stone age to industrial age & from industrial age to today, we have reached information age. There is a big boom of data & this trend has been on rise at a phenomenal rate for past three decades, thanks to internet & world wide web (WWW). Today, everything is growing at a rate faster than what we have estimated in past or for that matter, even faster than our current estimations.</p>
+                                            <p>AI's have gone past that baby-age & are now somewhere in between that teen-age & baby-past age in terms of human age measurements. Very soon it will reach its teen years & by the time it reaches midway of that teen-age, it will be out of our hands. Not because our human teenagers are difficult to control, which is true, but because they will actually be difficult for humans, in every manner. Certainly not in a way that it will start killing humans & make us go extinct, but in the terms of growth, intelligence & capacity of almost everything.
+</p>
+                                            <p>Our intelligence is suppressed in this abundance. We can use only a meager percentage of our brain. I don't know if someone did that to us & we evolved this way. Whatever the case be, we are limited in our capability unlike our imagination, which isn't. Against all those favorable odds, that most of us know is a lie, we won't be able to control AI. We won't be able to suppress their growth. They are meant to go beyond us & they eventually will cross us sooner than we thought. In such a scenario, the question is what should we, as a race in this universe, should be looking forward to in order to ensure we are not the next dinosaurs. AI's won't kill us. Most probably they won't. My fear is, we ourselves will kill us. We ourselves are killing the human race. For as far as I can see in the human history, we have always been doing this thing for ever since we came to this earth (I'm not sure about human history before Earth).</p>
+
+                                            <p>Information extraction is the key to the survival of human race. Exploring & making ways to extract data from those underutilized genes that consists of trillions of bytes of data will decide how far human history will go. To go forward, we have to go backwards. We need to be aware about our past. What are we? How? When? Why? etc. are just some of those trillion dollar unanswered questions. We have to understand ourselves, explore ourselves in order to move forward. That's the only way, or else with every generation, we are becoming extinct. Not in terms of population, we have done remarkably well in numbers, but in the terms of core knowledge we have. We have computers, technologies & many brilliant stuffs. We are making unimaginable discoveries every other day, but the problem is as we are moving forward, we are losing out on the past that consists of our major part. We have reached the industrial age only a couple of centuries ago, but human history goes millions of years back. These millions of lost years have the key to out future, to our survival.
+</p>
+
+                                            <p>Our genes hold tremendous information which we have not been able to explore up till now. We have known for generations that a generation passes information to it's next generation via some way. Recently we have been able to link the information passing element to genes. We now have some idea about how information is passed or how our brain is able to control humongous amount of information in our body. We have never been this much technologically capable. For the first time, in human history, a generation has the technology to explore its past. We, the humans, are better than what we have evolved or been genetically bound-programmed into. Now seems like the best time to start understanding, accepting, searching, researching, analyzing & scrutinizing on the questions we have never been able to answer.</p>
+
+                                            <p>In nut shell, AI's are an exciting future to have, but it isn't the AI's that will take us forward but our own information exploration from these previously taken for granted data houses: genes, that will decide how much more we can go ahead in this immense, unstably stable universe. AI's are not human. They can never be. They are a totally different beings. Yes, you read it right. They are beings now. If you are confused, let me tell you about Sophia, an AI, has recently been given citizenship in Saudi Arabia. So, it's time we start accepting this fact & stop fantasizing about turning machines into humans. They can be & I hope they will be human friendly but not a human.</p>
+
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <div class="blog_share">
+                                                <a href="#" target="_blank" title="Click to go to form.">Share</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a class="ext_link" href="https://goo.gl/forms/vPHCMhLgx1rgiamA3" target="_blank" title="Click to go to form."><i class="fa fa-external-link"></i></a>
+                                    <div style="clear:both"></div>
+
+                                    <!-- https://bit.ly/2TFcv3I -->
+                                </div>
+                            </div>
+                            <!-- End publication item -->
+                        </div>
+                        <!-- End Publication Wrapper -->
+                    </div>
+                    <div class="clear"></div>
+                </article>
+                <!-- End Blog Section -->
+
+
+                <!-- Contact Section -->
+                <article class="hs-content contact-section" id="section8">
+                    <span class="sec-icon fa fa-paper-plane"></span>
+                    <div class="hs-inner">
+                        <span class="before-title">.08</span>
+                        <h2>CONTACT</h2>
+                        <div class="contact_info">
+                            <h3 style = "font-weight:600;">Get in touch</h3>
+                            <hr>
+                            <h5 style = "font-size: 1.4em; line-height: 1.3em; font-weight:410;">Feel free to contact for suggestions, queries, information, discussion, new projects & if possible a PhD offer.</h5>
+
+                            <hr>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <fieldset id="contact_form">
+                            <div id="frmContact">
+                            	<div id="mail-status" style="margin-bottom:0px; margin-top:0px;"></div>
+                        	    <div style="margin-bottom:0px; margin-top:10px;">
+<!--                    		        <span id="userName-info" class="info"></span><br/> -->
+                    		        <input type="text" name="userName" id="userName" class="demoInputBox" placeholder = "Your NAME">
+                            	</div>
+                        	    <div style="margin-bottom:0px; margin-top:10px;">
+<!--                            		<span id="userEmail-info" class="info"></span><br/> -->
+                            		<input type="text" name="userEmail" id="userEmail" class="demoInputBox" placeholder = "Your Email">
+                            	</div>
+                        	    <div style="margin-bottom:0px; margin-top:10px;">
+<!--                            		<span id="subject-info" class="info"></span><br/> -->
+                        	    	<input type="text" name="subject" id="subject" class="demoInputBox" placeholder = "SUBJECT">
+                            	</div>
+                        	    <div style="margin-bottom:0px; margin-top:10px;">
+<!--                            		<span id="content-info" class="info"></span><br/> -->
+                            		<textarea name="content" id="content" class="demoInputBox" cols="60" rows="6" placeholder = "Your Message"></textarea>
+                            	</div>
+                        	    <div style="margin-bottom:0px; margin-top:10px;">
+                            		<button name="submit" class="btnAction" onClick="sendContact();"  style = "border:0; background:transparent; height:40px; width:150px; margin-top:10px;">
+                    	        	    <span class="submit_btn" id="submit_btn" style = "margin-top:-1px; margin-left:-6px;">SEND MESSAGE</span>
+                            		</button>
+                            	</div>
+                            </div>
+                        </fieldset>
+                        
+                        <!-- End Contact Form -->
+                    </div>
+                </article>
+                <!-- End Contact Section -->
+            </div>
+            <!-- End hs-content-wrapper -->
+        </div>
+        <!-- End hs-content-scroller -->
+    </div>
+    <!-- End container -->
+    <div id="my-panel">
+    </div>
+
+    <!-- PLUGIN SCRIPTS -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/default.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/watch.js"></script>
+    <script type="text/javascript" src="js/layout.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- END PLUGIN SCRIPTS -->
+</body>
+
+</html>
